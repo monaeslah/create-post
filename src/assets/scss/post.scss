@@ -1,0 +1,92 @@
+.box-new-post {
+  background-color: #fff;
+  box-shadow: 0px 0px 7px #777373;
+  border-radius: 5px;
+
+  .title {
+    background-color: #eee;
+    text-align: right;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    color: $colorBlack;
+    border-bottom: 1px solid #b7b7b7;
+  }
+
+  .icon-smile {
+    font-size: 2rem;
+    color: #858585;
+  }
+
+  .btn-icon {
+    color: #8d8d8d;
+    transition: all .3s;
+
+    .icon {
+      font-size: 1.2rem;
+      line-height: 0;
+      color: #8d8d8d;
+    }
+  }
+  .name{
+    color: #1d91bd;
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  .text-post{
+    line-height: 1.8rem;
+    color: $colorBlack;
+  }
+  .image-post{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+  }
+}
+
+.input-style {
+  background-color: #fff;
+  @include font-source-sans(1rem, #6b6b6b, 500, 1.8);
+  padding: 2px;
+  border: 0px solid #dad8d8;
+  width: 100%;
+  @include radius(2px);
+  border-color: #dad8d8;
+  min-height: 38px;
+  transition: all .2s;
+
+  &:focus {
+    border: 0px solid #eee;
+
+  }
+}
+
+.border-top-gray {
+  border-top: 1px solid #dbdbdb;
+}
+
+.input-file {
+  opacity: 0;
+  position: relative;
+  z-index: 1;
+  max-width: 200px;
+}
+
+.input-file-layer {
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: #8d8d8d;
+  transition: all .3s;
+
+  .icon {
+    font-size: 1.2rem;
+    line-height: 0;
+    color: #8d8d8d;
+  }
+}
+.btn-submit{
+  color:#fff;
+  background-color: #1d91bd;
+  border-radius: 5px;
+}
